@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Weather App</h1>
+            <p>Get weather information for any location</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-wrapper">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search by city name..."
+                    class="search-input"
+                >
+                <button id="searchBtn" class="search-btn">Search</button>
+            </div>
+            <button id="locationBtn" class="location-btn">📍 Use My Location</button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Fetching weather data...</p>
+        </div>
+
+        <div id="error" class="error hidden">
+            <p id="errorMsg"></p>
+        </div>
+
+        <div id="weatherDisplay" class="weather-display hidden">
+            <div class="current-weather">
+                <div class="weather-header">
+                    <h2 id="locationName"></h2>
+                    <p id="lastUpdated" class="last-updated"></p>
+                </div>
+                
+                <div class="weather-main">
+                    <div class="weather-icon-temp">
+                        <img id="weatherIcon" src="" alt="Weather icon" class="weather-icon">
+                        <span id="weatherEmoji" class="weather-emoji hidden"></span>
+                        <div class="temp-info">
+                            <div id="temperature" class="temperature"></div>
+                            <div id="description" class="description"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail-card">
+                        <div class="detail-label">Feels Like</div>
+                        <div id="feelsLike" class="detail-value"></div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Humidity</div>
+                        <div id="humidity" class="detail-value"></div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Wind Speed</div>
+                        <div id="windSpeed" class="detail-value"></div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Pressure</div>
+                        <div id="pressure" class="detail-value"></div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Visibility</div>
+                        <div id="visibility" class="detail-value"></div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">UV Index</div>
+                        <div id="uvIndex" class="detail-value"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="recentSearches" class="recent-searches hidden">
+            <h3>Recent Searches</h3>
+            <div id="searchesList" class="searches-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
