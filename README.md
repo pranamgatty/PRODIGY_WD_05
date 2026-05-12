@@ -126,26 +126,6 @@ The app fetches current weather conditions including:
 - Touch-friendly buttons and inputs
 - Optimized weather icons for all screen sizes
 
-## Advanced Features
-
-### Weather Icons
-Dynamic emoji-based weather icons that represent current conditions:
-- ☀️ Clear sky
-- ⛅ Partly cloudy
-- ☁️ Overcast
-- 🌧️ Rain
-- ⛈️ Thunderstorm
-- ❄️ Snow
-- 🌫️ Foggy
-
-### UV Index
-Estimated UV index based on weather conditions and time of day.
-
-### Animations
-- Smooth fade-in for weather display
-- Loading spinner for API requests
-- Hover effects on interactive elements
-- Slide-down animation for error messages
 
 ## Troubleshooting
 
